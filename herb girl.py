@@ -61,7 +61,8 @@ class Player:
         for plant in self.plants:
             print(plant.type)
         return 'and a total of {leaves} leaves'.format(leaves=self.you_leaves)
-    #methods will be to water the plant, and to pick the leaves. maybe to get new plants too.
+  
+#methods will be to water the plant, and to pick the leaves. maybe to get new plants too.
 
     def water(self):
         plant = self.plants[self.current_plant]
@@ -111,7 +112,7 @@ class Player:
             print('problem')
 
 
-            
+#title screen            
             
 
 list = []
@@ -132,6 +133,8 @@ print(""""
   
  """)
 
+#game set up
+
 namez = input('what is your name? ')
 herb1 = Herb(input('what kind of herb would you like? '))
 list.append(herb1)
@@ -145,6 +148,8 @@ print('in this game you can water you plants, pick the leaves, and swap which on
 print('just type "water", "pick" or "swap"')
 print('have fun')
 
+
+#made the game 100 turn long for now
 
 goes = 0
 
